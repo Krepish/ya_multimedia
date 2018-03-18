@@ -5,6 +5,17 @@
     display:none;
 }
 
+@keyframes opacityScale {
+    0% {
+        opacity: 0.3;
+        transform: scale(0.1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(2);
+    }
+}
+
 .circle {
     height: 200px;
     width: 200px;
@@ -22,17 +33,6 @@
     background-color: red;
 }
 
-.second {
+.circle.circle_second {
     animation-delay: 1000ms;
-}
-
-@keyframes opacityScale {
-    0% {
-    opacity: 0.3;
-        transform: scale(0.1);
-    }
-    100% {
-    opacity: 0;
-        transform: scale(2);
-    }
 }
